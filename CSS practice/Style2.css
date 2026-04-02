@@ -1,0 +1,36 @@
+:root{
+    --main--color: rgb(238, 44, 44);
+    --sub--color: rgb(73, 192, 240);
+    --text--color: rgb(11, 208, 11);
+
+
+}
+
+#login{
+     background-color: var(--main--color);
+    border: 1px solid black;
+    
+}
+
+#Register{
+   background-color: var(--sub--color);
+    border: 1px solid black;
+}
+h1{
+    color:var(--main--color);
+}
+
+h3{
+    color: var(--text--color);
+}
+p{
+    color:var(--text--color);
+}
+
+th{
+    color:var(--main--color);
+}
+
+td{
+    color:var(--text--color);
+}
