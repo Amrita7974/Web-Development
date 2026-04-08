@@ -1,0 +1,36 @@
+#outerBox{
+    height: 600px;
+    width: 600px;
+    border: 1px solid #000;
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-around;
+}
+
+.inner1{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    background-color: aquamarine;
+    justify-content: right;
+}
+
+.inner2{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    background-color: aquamarine;
+    justify-content: center;
+}
+
+.inner3{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    background-color: aquamarine;
+    
+
+}
+
+
+
