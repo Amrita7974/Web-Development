@@ -22,11 +22,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   background-color: none;
   box-shadow:none;
-  gap: 50px;
-  font-size: large;
+  gap: 40px;
+  font-size:medium;
   cursor: pointer;
 }
 
@@ -53,19 +53,19 @@
 .phone-no {
   text-decoration: none;
   color: inherit;  
-  font-size: larger;      
+  font-size: large;      
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .login-btn {
-  padding: 15px;
+  padding: 10px;
   font-weight: bolder;
-  font-size: larger;
+  font-size: large;
   background-color: rgb(11, 91, 156);
   color: aliceblue;
-  border-radius: 5px;
+  border-radius: 2px;
   cursor: pointer;
  box-shadow: 8px 8px 0px #90caf9;
 }
@@ -86,7 +86,7 @@ p {
 .form-card {
 
     background-color:#e3f7fd;
-    max-width: 1000px;
+    max-width: 800px;
     height: 1000px;
     margin: 0 auto;
     padding: 40px;
@@ -103,7 +103,7 @@ h1 {
     text-align: center;
     color: #666;
     margin-bottom: 30px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 
@@ -121,10 +121,11 @@ h1 {
 }
 
 .field1{
-    width: 350px;
+    width: 300px;
    padding: 5px;
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -212,6 +213,7 @@ input, select {
     color: white;
     padding: 60px 20px 20px 20px;
 
+
 }
 
 .footer-grid {
@@ -224,6 +226,7 @@ input, select {
 
 .footer-column {
     flex: 1;
+    img{height: 30px;}
 }
 
 .footer-column h3 {
@@ -273,3 +276,83 @@ input, select {
 
 
 
+
+
+
+@media (max-width: 1200px) {
+  .form-card {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .footer-grid {
+    flex-wrap: wrap;
+  }
+}
+
+/* FORM RESPONSIVE FIX */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .field,
+  .field1 {
+    width: 48%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .input-row {
+    flex-direction: column;
+  }
+
+  .field,
+  .field1 {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar2 {
+  flex-direction: column;
+}
+
+  .navbar1 {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+ 
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .navbar1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+  .form-card {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
