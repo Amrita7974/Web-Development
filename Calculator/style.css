@@ -1,0 +1,85 @@
+body {
+    background-image: url('https://learn.ricr.in/pluginfile.php/6753/mod_page/content/8/CalculatorBGImage.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.calculator-card {
+    width: 380px;
+    background-color: #e2ebf0; 
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+   
+}
+
+.display-section {
+    background-color: #d2e8c6; 
+    height: 120px;
+    border-radius: 20px 20px 5px 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    
+}
+
+#inputbox {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 2.5rem;
+    text-align: right;
+    outline: none;
+}
+
+.buttons-grid {
+    background-color: #f8d7da; 
+    padding: 20px;
+    border-radius: 5px 5px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  
+}
+
+.btn {
+    height: 65px;
+    width: 65px;
+    border-radius: 50% !important;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.1s;
+     
+}
+
+.btn-light {
+    background-color: #ffffff;
+}
+
+.btn-orange {
+    background-color: #ffb703;
+    color: white;
+}
+
+.btn-equal {
+    background-color: #1a936f;
+    color: white;
+    grid-column: span 2;
+    width: 100% !important;
+    border-radius: 30px !important;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
