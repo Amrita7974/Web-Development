@@ -10,6 +10,7 @@ async function getWeather() {
 
   const response = await fetch(WEATHER_API);
   const data = await response.json();
+  const data1 = await response.json();
 
   //console.log(data);
 
