@@ -19,7 +19,7 @@
    background-color: aqua;
    
 }
-#child{
+#child{                                                                    
     display: flex;
     justify-content: center;
     align-items: center;
