@@ -7,20 +7,23 @@ import Product from "./pages/Product";
 import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Register from "./pages/Courses";
+import Courses from "./pages/Courses";
 
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Courses from "./pages/Courses";
+
 
 
 function App() {
+  const age = 20;
   return (
     <>
 
     <BrowserRouter>
 
     <Header />
+    <p>my age is {age}</p>
     <Routes>
+
       <Route  path="/" element={<Home />} />
        <Route  path="/about" element={<About />} />
         <Route  path="/product" element={<Product />} />
@@ -29,6 +32,7 @@ function App() {
            <Route  path="/register" element={<Register />} />
 
             <Route  path="/courses" element={<Courses />} />
+            
     </Routes>
     </BrowserRouter>
       {/* <Header />
