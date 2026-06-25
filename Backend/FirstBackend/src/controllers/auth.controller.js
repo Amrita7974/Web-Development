@@ -1,4 +1,4 @@
-import User from "../models/usermodel.js";
+import User from "../models/user.model.js";
 export const RegisterUser = async(req, res) => {
   try{
     const{ fullName,email,phone,dob,gender,password} = req.body;
@@ -13,10 +13,30 @@ export const RegisterUser = async(req, res) => {
       return;
     }
 
+    const photoUrl = 'https:placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}';
 
-  } catch (error){ 
+const photo = {
+  url: photoUrl,
+  publicId: null,
+};
 
-  }
+const newUser = await User.create({
+  fullName,
+  email,
+  password,
+  phone,
+  gender,
+  dob,
+  photo,
+});
+
+res.status(201).json({ message: "User Created Successfully" });
+
+} catch (error) {
+  res.status(500).json({ message: "Internal Server Error" });
+}
+
+ 
 };
 
 export const LoginUser = (req, res) => {
